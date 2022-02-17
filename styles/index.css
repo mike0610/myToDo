@@ -1,0 +1,200 @@
+/*Reset*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/* -------------------------- */
+body {
+	padding: 0;
+	margin: 0;
+	background-image: url("bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	font-family: "Black Ops One", cursive;
+}
+
+.input-text {
+	margin-bottom: 15px;
+	width: 100%;
+	border-radius: 4px;
+	border: 1px solid rgba(29, 29, 29, 0.664);
+	padding: 10px;
+	font-size: 25px;
+}
+
+.input-text:focus {
+	border: 1px solid red;
+}
+
+.main {
+	width: 600px;
+	margin: 0 auto;
+	background-color: rgba(202, 202, 202, 0.322);
+	margin-top: 100px;
+	padding: 20px;
+	box-shadow: 2px 2px 5px rgba(39, 1, 1, 0.164);
+	border-radius: 5px;
+	border: 1px solid rgba(255, 0, 0, 0.137);
+}
+
+#todo-list-container {
+	overflow-y: auto;
+	height: auto;
+}
+
+.small-bottom-margin {
+	margin-bottom: 50px;
+}
+
+#header {
+	text-align: center;
+	color: rgb(2, 2, 2);
+	font-weight: 800;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+#new-todo-input {
+	width: 400px;
+	position: relative;
+	/* display: inline-block; */
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 20px;
+	padding: 14px;
+	opacity: 0.83;
+}
+
+#submit-new-todo-btn {
+	float: right;
+	width: 25%;
+	font-size: 26px;
+	padding: 9px 0 9px 0;
+	border-radius: 4px;
+	background-color: #dc3546;
+	color: #fff;
+}
+#submit-new-todo-btn:hover {
+		background-color: #b42a38;
+}
+
+.list-group-item {
+	margin: 20px 0;
+	display: flex;
+	justify-content: space-between;
+
+	border-radius: 0.25rem;
+	align-items: center;
+	font-size: 30px;
+	padding: 10px;
+}
+
+.list-group-item:hover {
+	color: white;
+}
+
+#todo-list-container li {
+	cursor: pointer;
+	background-color: white;
+	border: 1px solid rgba(41, 41, 41, 0.404);
+}
+
+#todo-list-container li:hover {
+	background-color: rgba(31, 31, 31, 0.589);
+	border: 1px solid rgba(255, 0, 0, 0.322);
+}
+
+.todo-remove-button {
+	right: 0;
+	border: none;
+	border-color: transparent;
+	background: transparent;
+	color: red;
+	font-size: 30px;
+	/* position: absolute; */
+	margin-right: 20px;
+}
+
+.todo-remove-button:hover {
+	color: rgb(194, 3, 3);
+}
+
+.todo-remove-button:active,
+.todo-remove-button:focus {
+	outline: none;
+}
